@@ -1,0 +1,14 @@
+<h1>welcome</h1>
+
+<% name = "boris" %>
+
+<h2> Salut <%= name.capitalize %> </h2>
+
+<p>We are <%= Time.now.strftime("%d/%m/%Y") %></p>
+
+
+<% @restaurants.each do |restaurant| %>
+
+<%= restaurant %>
+
+<% end %>
