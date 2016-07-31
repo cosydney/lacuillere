@@ -9,4 +9,8 @@ class PagesController < ApplicationController
 
   def team
   end
+
+  def search
+    @category = params[:category]
+  end
 end

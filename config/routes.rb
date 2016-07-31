@@ -2,7 +2,12 @@ Rails.application.routes.draw do
 
   get 'about' => "pages#about"
   get 'contact' => "pages#contact"
-  get 'team' => "pages#team"
+  get 'equipe' => "pages#team", as: :team
+  get 'search' => "pages#search"
+  post 'search' => "pages#search"
+
+  get "search/:category" => "pages#search"
+
 
   root 'pages#about'
 
