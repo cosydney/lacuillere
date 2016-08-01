@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   get 'equipe' => "pages#team", as: :team
   get 'search' => "pages#search"
   post 'search' => "pages#search"
-
   get "search/:category" => "pages#search"
 
 
